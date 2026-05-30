@@ -1,0 +1,53 @@
+{
+    "name": "mashirou1234/laravel-when-on-relation",
+    "description": "Adds conditional callbacks on Laravel Eloquent relationship instances.",
+    "type": "library",
+    "keywords": [
+        "eloquent",
+        "laravel",
+        "relation",
+        "when"
+    ],
+    "homepage": "https://github.com/mashirou1234/laravel-when-on-relation",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/mashirou1234/laravel-when-on-relation/issues",
+        "source": "https://github.com/mashirou1234/laravel-when-on-relation"
+    },
+    "require": {
+        "php": "^8.3",
+        "illuminate/database": "^13.0",
+        "illuminate/support": "^13.0"
+    },
+    "require-dev": {
+        "ext-pdo_sqlite": "*",
+        "laravel/pint": "^1.0",
+        "orchestra/testbench": "^11.0",
+        "phpunit/phpunit": "^11.5 || ^12.0 || ^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mashirou1234\\LaravelWhenOnRelation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mashirou1234\\LaravelWhenOnRelation\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mashirou1234\\LaravelWhenOnRelation\\WhenOnRelationServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "lint": "pint --test",
+        "format": "pint",
+        "test": "phpunit"
+    }
+}
