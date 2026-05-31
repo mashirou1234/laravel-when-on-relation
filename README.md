@@ -1,5 +1,9 @@
 # Laravel When On Relation
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mashirou1234/laravel-when-on-relation.svg)](https://packagist.org/packages/mashirou1234/laravel-when-on-relation)
+[![Tests](https://github.com/mashirou1234/laravel-when-on-relation/actions/workflows/tests.yml/badge.svg)](https://github.com/mashirou1234/laravel-when-on-relation/actions/workflows/tests.yml)
+[![License](https://img.shields.io/github/license/mashirou1234/laravel-when-on-relation.svg)](LICENSE.md)
+
 This package adds a `whenOnRelation()` macro to Eloquent relationship instances.
 
 ## Installation
