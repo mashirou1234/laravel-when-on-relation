@@ -32,3 +32,26 @@ COMPOSER_ROOT_VERSION=dev-main composer audit
 
 Update `CHANGELOG.md` with the released version and date, then tag the release
 from `main`.
+
+After pushing a tag, confirm:
+
+- GitHub Actions passed on `main`.
+- Packagist lists the new tag.
+- A GitHub Release exists for the tag.
+- A clean Composer install can require the released version.
+
+## Versioning
+
+Use small releases and keep the public API narrow.
+
+- Patch releases: bug fixes, documentation fixes, and CI or packaging updates.
+- Minor releases: new opt-in behavior that does not change existing APIs.
+- Breaking changes: avoid them before there is a strong reason to publish `1.0.0`.
+
+Do not add `whenRelation()` as an alias unless the naming problem is revisited
+explicitly.
+
+## Announcements
+
+Keep announcements brief and centered on the package behavior. Avoid framing the
+package as a continuation of a framework pull request.
